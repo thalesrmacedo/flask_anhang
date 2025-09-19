@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block conteudo %}
+<h2>Detalhes do Aluno</h2>
+<p><strong>Nome:</strong> {{ aluno.nome }}</p>
+<p><strong>Nota:</strong> {{ aluno.nota }}</p>
+<a href="{{ url_for('index') }}">Voltar</a>
+{% endblock %}
